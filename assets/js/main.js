@@ -42,7 +42,10 @@ $(document).ready(function() {
         let firstInput = boxAdd.querySelector('input');
         document.getElementById('btn-box').addEventListener('click', function(){
             showBox(document.querySelector('.box-add'));
-            firstInput.focus();
+            if(firstInput.dataset.focus !== 'false' ){
+                firstInput.focus();
+            }
+            
         })
         document.getElementById('min-box').addEventListener('click', function(){
             hideBox(document.querySelector('.box-add'));
