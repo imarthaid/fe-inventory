@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
   <meta name="author" content="Creative Tim">
-  <title>Data Barang | Inventori Management System</title>
+  <title>Data User | Inventori Management System</title>
   <!-- Favicon -->
   <link rel="icon" href="assets/img/brand/favicon.png" type="image/png">
   <!-- Fonts -->
@@ -100,7 +100,7 @@
           <!-- Divider -->
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="report.html">
+              <a class="nav-link" href="report-product.html">
                 <i class="fas fa-newspaper text-info"></i>
                 <span class="nav-link-text">Data Laporan</span>
               </a>
@@ -160,11 +160,11 @@
         <div class="header-body">
           <div class="row align-items-center py-4">
             <div class="col-lg-6 col-7">
-              <h6 class="h2 text-white d-inline-block mb-0">Data Barang</h6>
+              <h6 class="h2 text-white d-inline-block mb-0">Data User</h6>
               <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
                 <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
                   <li class="breadcrumb-item"><a href="#"><i class="fas fa-home"></i></a></li>
-                  <li class="breadcrumb-item"><a href="#">Data Barang</a></li>
+                  <li class="breadcrumb-item"><a href="#">Data User</a></li>
                 </ol>
               </nav>
             </div>
@@ -182,7 +182,7 @@
           <div class="card">
             <!-- Card header -->
             <div class="card-header text-center text-uppercase border-0 bg-secondary mb-3">
-              <h3 class="mb-0">Data Barang</h3>
+              <h3 class="mb-0">Data User</h3>
             </div>
             <!-- Light table -->
             <div class="table-responsive pb-3">
@@ -191,20 +191,19 @@
                     <tr class="table-primary text-dark font-weight-700">
                       <th class="text-sm" style="width: 30px !important;">No</th>
                       <th class="text-sm">Nama</th>
-                      <th class="text-sm" style="width: 100px !important;">Tanggal Buat</th>
-                      <th class="text-sm">Kategori</th>
-                      <th class="text-sm">Satuan</th>
+                      <th class="text-sm">Email</th>
+                      <th class="text-sm text-center">Telepon</th>
+                      <th class="text-sm text-center">Role</th>
                       <th class="text-sm text-center" style="width: 100px !important;">Aksi</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td class="text-center">1</td>
-                        <!-- <td><img src="assets/img/theme/angular.jpg" width="50" alt="Foto Barang"></td> -->
-                        <td>Angular</td>
-                        <td>12/11/2020</td>
-                        <td>Javascript</td>
-                        <td>Franmework</td>
+                        <td>Andar Pratama</td>
+                        <td>anda.pratama@gmail.com</td>
+                        <td class="text-center">0812-8369-9257</td>
+                        <td><button class="btn btn-primary py-1 btn-block">Super Admin</button></td>
                         <td class="text-center py-1">
                           <div class="btn-group">
                             <button class="bdg btn-outline-primary hover-warning"><i class="fas fa-info"></i></button>
@@ -214,42 +213,39 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="text-center">2</td>
-                        <!-- <td><img src="assets/img/theme/angular.jpg" width="50" alt="Foto Barang"></td> -->
-                        <td>Angular</td>
-                        <td>12/11/2020</td>
-                        <td>Javascript</td>
-                        <td>Franmework</td>
-                        <td class="text-center py-1">
-                          <div class="btn-group">
-                            <button class="bdg btn-outline-primary hover-warning"><i class="fas fa-info"></i></button>
-                            <button id="btn-box" class="btn-edit bdg btn-outline-primary hover-success border-right-0 border-left-0"><i class="fas fa-pen-alt"></i></button>
-                            <button class="bdg btn-outline-primary hover-danger"><i class="fas fa-eraser"></i></button>
-                          </div>
-                        </td>
+                      <td class="text-center">2</td>
+                      <td>Shopi Main</td>
+                      <td>main.shopi@gmail.com</td>
+                      <td class="text-center">0812-8369-9257</td>
+                      <td><button class="btn btn-info py-1 btn-block">Admin</button></td>
+                      <td class="text-center py-1">
+                        <div class="btn-group">
+                          <button class="bdg btn-outline-primary hover-warning"><i class="fas fa-info"></i></button>
+                          <button id="btn-box" class="btn-edit bdg btn-outline-primary hover-success border-right-0 border-left-0"><i class="fas fa-pen-alt"></i></button>
+                          <button class="bdg btn-outline-primary hover-danger"><i class="fas fa-eraser"></i></button>
+                        </div>
+                      </td>
                     </tr>
                     <tr>
-                        <td class="text-center">3</td>
-                        <!-- <td><img src="assets/img/theme/angular.jpg" width="50" alt="Foto Barang"></td> -->
-                        <td>Angular</td>
-                        <td>12/11/2020</td>
-                        <td>Javascript</td>
-                        <td>Franmework</td>
-                        <td class="text-center py-1">
-                          <div class="btn-group">
-                            <button class="bdg btn-outline-primary hover-warning"><i class="fas fa-info"></i></button>
-                            <button id="btn-box" class="btn-edit bdg btn-outline-primary hover-success border-right-0 border-left-0"><i class="fas fa-pen-alt"></i></button>
-                            <button class="bdg btn-outline-primary hover-danger"><i class="fas fa-eraser"></i></button>
-                          </div>
-                        </td>
+                      <td class="text-center">3</td>
+                      <td>Saha Aing</td>
+                      <td>aing.saha@gmail.com</td>
+                      <td class="text-center">0812-8369-9257</td>
+                      <td><button class="btn btn-warning py-1 btn-block">Staff</button></td>
+                      <td class="text-center py-1">
+                        <div class="btn-group">
+                          <button class="bdg btn-outline-primary hover-warning"><i class="fas fa-info"></i></button>
+                          <button id="btn-box" class="btn-edit bdg btn-outline-primary hover-success border-right-0 border-left-0"><i class="fas fa-pen-alt"></i></button>
+                          <button class="bdg btn-outline-primary hover-danger"><i class="fas fa-eraser"></i></button>
+                        </div>
+                      </td>
                     </tr>
                     <tr>
                         <td class="text-center">4</td>
-                        <!-- <td><img src="assets/img/theme/angular.jpg" width="50" alt="Foto Barang"></td> -->
-                        <td>Angular</td>
-                        <td>12/11/2020</td>
-                        <td>Javascript</td>
-                        <td>Franmework</td>
+                        <td>Andar Pratama</td>
+                        <td>anda.pratama@gmail.com</td>
+                        <td class="text-center">0812-8369-9257</td>
+                        <td><button class="btn btn-primary py-1 btn-block">Super Admin</button></td>
                         <td class="text-center py-1">
                           <div class="btn-group">
                             <button class="bdg btn-outline-primary hover-warning"><i class="fas fa-info"></i></button>
@@ -259,12 +255,39 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="text-center">5</td>
-                        <!-- <td><img src="assets/img/theme/angular.jpg" width="50" alt="Foto Barang"></td> -->
-                        <td>Angular</td>
-                        <td>12/11/2020</td>
-                        <td>Javascript</td>
-                        <td>Franmework</td>
+                      <td class="text-center">5</td>
+                      <td>Shopi Main</td>
+                      <td>main.shopi@gmail.com</td>
+                      <td class="text-center">0812-8369-9257</td>
+                      <td><button class="btn btn-info py-1 btn-block">Admin</button></td>
+                      <td class="text-center py-1">
+                        <div class="btn-group">
+                          <button class="bdg btn-outline-primary hover-warning"><i class="fas fa-info"></i></button>
+                          <button id="btn-box" class="btn-edit bdg btn-outline-primary hover-success border-right-0 border-left-0"><i class="fas fa-pen-alt"></i></button>
+                          <button class="bdg btn-outline-primary hover-danger"><i class="fas fa-eraser"></i></button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-center">6</td>
+                      <td>Saha Aing</td>
+                      <td>aing.saha@gmail.com</td>
+                      <td class="text-center">0812-8369-9257</td>
+                      <td><button class="btn btn-warning py-1 btn-block">Staff</button></td>
+                      <td class="text-center py-1">
+                        <div class="btn-group">
+                          <button class="bdg btn-outline-primary hover-warning"><i class="fas fa-info"></i></button>
+                          <button id="btn-box" class="btn-edit bdg btn-outline-primary hover-success border-right-0 border-left-0"><i class="fas fa-pen-alt"></i></button>
+                          <button class="bdg btn-outline-primary hover-danger"><i class="fas fa-eraser"></i></button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">7</td>
+                        <td>Andar Pratama</td>
+                        <td>anda.pratama@gmail.com</td>
+                        <td class="text-center">0812-8369-9257</td>
+                        <td><button class="btn btn-primary py-1 btn-block">Super Admin</button></td>
                         <td class="text-center py-1">
                           <div class="btn-group">
                             <button class="bdg btn-outline-primary hover-warning"><i class="fas fa-info"></i></button>
@@ -274,19 +297,32 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="text-center">6</td>
-                        <!-- <td><img src="assets/img/theme/angular.jpg" width="50" alt="Foto Barang"></td> -->
-                        <td>Angular</td>
-                        <td>12/11/2020</td>
-                        <td>Javascript</td>
-                        <td>Franmework</td>
-                        <td class="text-center py-1">
-                          <div class="btn-group">
-                            <button class="bdg btn-outline-primary hover-warning"><i class="fas fa-info"></i></button>
-                            <button id="btn-box" class="btn-edit bdg btn-outline-primary hover-success border-right-0 border-left-0"><i class="fas fa-pen-alt"></i></button>
-                            <button class="bdg btn-outline-primary hover-danger"><i class="fas fa-eraser"></i></button>
-                          </div>
-                        </td>
+                      <td class="text-center">8</td>
+                      <td>Shopi Main</td>
+                      <td>main.shopi@gmail.com</td>
+                      <td class="text-center">0812-8369-9257</td>
+                      <td><button class="btn btn-info py-1 btn-block">Admin</button></td>
+                      <td class="text-center py-1">
+                        <div class="btn-group">
+                          <button class="bdg btn-outline-primary hover-warning"><i class="fas fa-info"></i></button>
+                          <button id="btn-box" class="btn-edit bdg btn-outline-primary hover-success border-right-0 border-left-0"><i class="fas fa-pen-alt"></i></button>
+                          <button class="bdg btn-outline-primary hover-danger"><i class="fas fa-eraser"></i></button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-center">9</td>
+                      <td>Saha Aing</td>
+                      <td>aing.saha@gmail.com</td>
+                      <td class="text-center">0812-8369-9257</td>
+                      <td><button class="btn btn-warning py-1 btn-block">Staff</button></td>
+                      <td class="text-center py-1">
+                        <div class="btn-group">
+                          <button class="bdg btn-outline-primary hover-warning"><i class="fas fa-info"></i></button>
+                          <button id="btn-box" class="btn-edit bdg btn-outline-primary hover-success border-right-0 border-left-0"><i class="fas fa-pen-alt"></i></button>
+                          <button class="bdg btn-outline-primary hover-danger"><i class="fas fa-eraser"></i></button>
+                        </div>
+                      </td>
                     </tr>
                 </tbody>
             </table>
@@ -316,68 +352,47 @@
 
   <div class="box-add px-4 py-5">
     <div class="box-header d-flex justify-content-between align-items-center">
-      <h1 class="h2 d-inline mb-0">Tambah Data Barang</h1>
+      <h1 class="h2 d-inline mb-0">Tambah Data User</h1>
       <button class="min-box" id="min-box">X</button>
     </div>
     <hr class="mt-2 mb-4">
 
     <form action="coba.html" method="post" class="form-validation">
       <div class="form-group mb-1">
-        <label class="font-weight-600" for="name">Nama Barang</label>
+        <label class="font-weight-600" for="name">Nama</label>
         <input type="text" name="name" data-validation="required" class="form-control border-999" tabindex="1" id="name">
         <small class="text-danger v-hidden">Error</small>
       </div>
 
       <div class="form-group mb-1">
-        <label class="font-weight-600" for="kategori">Kategori</label>
-        <select name="kategori" data-validation="required" class="form-control js-example-basic-single pr-3" id="kategori" tabindex="2">
-          <option disabled selected value> -- Pilih Kategori -- </option>
-          <option value="kategori">Kategori 1</option>
-          <option value="kategori">Kategori 2</option>
-          <option value="kategori">Kategori 3</option>
-          <option value="kategori">Kategori 4</option>
-          <option value="kategori">Kategori 5</option>
-        </select>
-        <div class="d-flex mt-1 justify-content-between">
-          <small class="text-danger v-hidden">Error</small>
-          <a href="category.html" class="text-primary">+ Tambah Kategori</a>
-        </div>
+        <label class="font-weight-600" for="email">Email</label>
+        <input type="email" name="email" data-validation="email" class="form-control border-999" tabindex="1" id="email">
+        <small class="text-danger v-hidden">Error</small>
       </div>
 
       <div class="form-group mb-1">
-        <label class="font-weight-600" for="satuan">Satuan</label>
-        <select name="satuan" data-validation="required"  class="form-control js-example-basic-single pr-3" id="satuan" tabindex="2">
-          <option disabled selected value> -- Pilih Satuan -- </option>
-          <option value="satuan">Satuan 1</option>
-          <option value="satuan">Satuan 2</option>
-          <option value="satuan">Satuan 3</option>
-          <option value="satuan">Satuan 4</option>
-          <option value="satuan">Satuan 5</option>
-        </select>
-        <div class="d-flex mt-1 justify-content-between">
-          <small class="text-danger v-hidden">Error</small>
-          <a href="unit.html" class="text-primary">+ Tambah Satuan</a>
-        </div>
+        <label class="font-weight-600" for="telepon">Telepon</label>
+        <input type="number" name="telepon" data-validation="required" class="form-control border-999" tabindex="1" id="telepon">
+        <small class="text-danger v-hidden">Error</small>
       </div>
 
       <div class="form-group mb-1">
-        <label class="font-weight-600" for="kondisi">Kondisi</label>
-        <select name="kondisi" data-validation="required"  class="form-control js-example-basic-single pr-3" id="kondisi" tabindex="2">
-          <option selected value="kondisi">Baik</option>
-          <option value="kondisi">Rusak</option>
-          <option value="kondisi">Hilang</option>
+        <label class="font-weight-600" for="role">Role</label>
+        <select name="role" data-validation="required"  class="form-control js-example-basic-single pr-3" id="role" tabindex="2">
+          <option disabled selected value> -- Pilih Role -- </option>
+          <option value="satuan">Super Admin</option>
+          <option value="satuan">Admin</option>
+          <option value="satuan">Staff</option>
         </select>
         <div class="d-flex mt-1 justify-content-between">
           <small class="text-danger v-hidden">Error</small>
         </div>
       </div>
-
-      <div style="clear: both;"></div>
 
       <div class="form-group ">
-        <label class="font-weight-600" for="foto">Foto</label>
+        <label class="font-weight-600" for="image">Foto</label>
         <div class="custom-file">
-          <input type="file" data-validation="file" name="file" class="custom-file-input" id="customFile">
+          <input type="file" data-validation="file" name="image" class="custom-file-input" id="image">
           <label class="custom-file-label" for="customFile" tabindex="4">Choose file</label>
         </div>
         <small class="text-danger v-hidden">Error</small>

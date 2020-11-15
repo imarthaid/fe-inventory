@@ -82,6 +82,19 @@ $(document).ready(function() {
     
     function checkValidation(data){
         var validation = false;
+        if(data.dataset.validation === 'email'){
+            if(data.value === ''){
+                setError(data, 'Inputan tidak boleh kosong')
+                validation = false;
+            } else if (!isEmail(data.value.trim())) {
+                setError(data, 'Email yang di input tidak valid')
+                validation = false;
+            } else {
+                setSuccess(data);
+                validation = true;
+            }
+        }
+        
         if(data.dataset.input === 'login' && data.dataset.validation === 'email'){
                 
             if(data.value === ''){
