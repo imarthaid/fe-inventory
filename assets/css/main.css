@@ -1,0 +1,143 @@
+.active-link {
+    background-color: rgba(30, 143, 255, 0.1) !important;
+    padding:20px;
+    border-radius:0;
+    font-weight: 600 !important;
+    border-bottom: 1px solid rgba(30, 143, 255, 0.705);
+}
+
+#sidebar .nav-link:hover {
+    background-color: rgba(30, 143, 255, 0.1) !important;
+}
+
+.mt-6 {
+    margin-top: 4rem;
+}
+
+button.btn-outline-light:hover {
+    background-color: dodgerblue !important;
+    color: #fff !important;
+}
+
+.tx-lg {
+    font-size: 1rem !important;
+}
+
+.navbar-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.min-box{
+    border: 0;
+    background-color: red;
+    color: #fff;
+    width: 30px;
+    height: 30px;   
+}
+
+.box-add {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.9);
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    right:0;
+    z-index: 102;
+    width: 500px;
+    transform: translateX(100%);
+    transition: all .5s;
+    border-left: 1px solid #aaa;
+}
+
+.box-add input.form-control, .box-add select.form-control {
+    color: #000;
+}
+
+.box-add input.form-control.border-999{
+    color: #000;
+    border: 1px solid #eee !important;
+}
+
+.custom-file {
+    border: 1;
+}
+
+.show-box {
+    transform: translateX(0);
+}
+
+.text-brand {
+    display: none;
+}
+
+.bdg {
+    width: 50px;
+    padding: 10px 0;
+}
+
+.v-hidden {
+    visibility: hidden !important;
+}
+
+.v-visible {
+    visibility: visible !important;
+}
+
+.hover-warning:hover {
+    background-color: #ffc107 !important;
+    border: 0;
+}
+
+.hover-success:hover {
+    background-color: #28a745 !important;
+    border: 0;
+}
+
+.hover-danger:hover {
+    background-color: #dc3545 !important;
+    border: 0;
+}
+
+.report .hover-primary {
+    box-sizing: border-box !important;
+}
+
+.report .hover-primary:hover {
+    background-color: #5e72e4 !important;
+    border: 1px solid #fff;
+}
+
+.hover-primary:hover a {
+    color: #fff !important;
+}
+
+.select2-container .select2-selection--single {
+    height: 100% !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #000 !important;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .text-brand {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .text-brand {
+        display: none;
+    }
+}   
+
+@media only screen and (max-width: 600px) {
+    .box-add {
+        width: 100% !important;
+    }
+}
