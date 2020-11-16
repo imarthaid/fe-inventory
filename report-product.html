@@ -455,82 +455,6 @@
     </div>
   </div>
 
-  <div class="box-add px-4 py-5">
-    <div class="box-header d-flex justify-content-between align-items-center">
-      <h1 class="h2 d-inline mb-0">Tambah Data Barang</h1>
-      <button class="min-box" id="min-box">X</button>
-    </div>
-    <hr class="mt-2 mb-4">
-
-    <form action="coba.html" method="post" class="form-validation">
-      <div class="form-group mb-1">
-        <label class="font-weight-600" for="name">Nama Barang</label>
-        <input type="text" name="name" data-validation="required" class="form-control border-999" tabindex="1" id="name">
-        <small class="text-danger v-hidden">Error</small>
-      </div>
-
-      <div class="form-group mb-1">
-        <label class="font-weight-600" for="kategori">Kategori</label>
-        <select name="kategori" data-validation="required" class="form-control js-example-basic-single pr-3" id="kategori" tabindex="2">
-          <option disabled selected value> -- Pilih Kategori -- </option>
-          <option value="kategori">Kategori 1</option>
-          <option value="kategori">Kategori 2</option>
-          <option value="kategori">Kategori 3</option>
-          <option value="kategori">Kategori 4</option>
-          <option value="kategori">Kategori 5</option>
-        </select>
-        <div class="d-flex mt-1 justify-content-between">
-          <small class="text-danger v-hidden">Error</small>
-          <a href="category.html" class="text-primary">+ Tambah Kategori</a>
-        </div>
-      </div>
-
-      <div class="form-group mb-1">
-        <label class="font-weight-600" for="satuan">Satuan</label>
-        <select name="satuan" data-validation="required"  class="form-control js-example-basic-single pr-3" id="satuan" tabindex="2">
-          <option disabled selected value> -- Pilih Satuan -- </option>
-          <option value="satuan">Satuan 1</option>
-          <option value="satuan">Satuan 2</option>
-          <option value="satuan">Satuan 3</option>
-          <option value="satuan">Satuan 4</option>
-          <option value="satuan">Satuan 5</option>
-        </select>
-        <div class="d-flex mt-1 justify-content-between">
-          <small class="text-danger v-hidden">Error</small>
-          <a href="unit.html" class="text-primary">+ Tambah Satuan</a>
-        </div>
-      </div>
-
-      <div class="form-group mb-1">
-        <label class="font-weight-600" for="kondisi">Kondisi</label>
-        <select name="kondisi" data-validation="required"  class="form-control js-example-basic-single pr-3" id="kondisi" tabindex="2">
-          <option selected value="kondisi">Baik</option>
-          <option value="kondisi">Rusak</option>
-          <option value="kondisi">Hilang</option>
-        </select>
-        <div class="d-flex mt-1 justify-content-between">
-          <small class="text-danger v-hidden">Error</small>
-        </div>
-      </div>
-
-      <div style="clear: both;"></div>
-
-      <div class="form-group ">
-        <label class="font-weight-600" for="foto">Foto</label>
-        <div class="custom-file">
-          <input type="file" data-validation="file" name="file" class="custom-file-input" id="customFile">
-          <label class="custom-file-label" for="customFile" tabindex="4">Choose file</label>
-        </div>
-        <small class="text-danger v-hidden">Error</small>
-      </div>
-      <div class="form-group">
-        <div class="box-footer d-flex px-5">
-          <button type="submit" class="btn btn-validation btn-primary d-block w-50" tabindex="5">Simpan</button>
-          <button type="button" id="close-box" class="btn btn-dark d-block w-50" tabindex="6">Batal</button>
-        </div>
-    </form>
-  </div>
-
   <!-- Argon Scripts -->
   <!-- Core -->
   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
@@ -544,7 +468,6 @@
   <script src="assets/vendor/chart.js/dist/Chart.extension.js"></script>
   <script src="assets/js/jquery.dataTables.min.js"></script>
   <script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
   <!-- Argon JS -->
   <script src="assets/js/argon.js?v=1.2.0"></script>
   <script src="assets/js/set.dataTables.js"></script>

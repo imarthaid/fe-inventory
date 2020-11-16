@@ -148,10 +148,17 @@ $(document).ready(function() {
         } 
     
         if(data.dataset.validation === 'file'){
+            let validExtention = data.dataset.valid.split('-')
+            let extentionFile = data.value.replace(/^C:\\fakepath\\/i, '')
+            extentionFile = extentionFile.split('.').pop();
             if(data.value === ''){
                 setError(data.parentElement, 'Inputan tidak boleh kosong!')
                 validation = false;
-            } else {
+            } else if(isFile(data, extentionFile, validExtention) === false){
+                setError(data.parentElement, 'Format file tidak valid');
+                validation = false;
+            }
+            else {
                 validation = true;
             }
         }
@@ -185,6 +192,15 @@ $(document).ready(function() {
     function isEmail(email){
         let cek = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
         return cek;
+    }
+
+    function isFile(extentionFile, validExtention){
+        var result = validExtention.includes(extentionFile);
+        if(result === false){
+            return false
+        } else {
+            return true
+        }
     }
 
 

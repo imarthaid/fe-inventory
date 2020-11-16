@@ -315,7 +315,7 @@
     </div>
   </div>
 
-  <div class="box-add px-4 py-5">
+  <div class="box-add px-4 py-5 show-box">
     <div class="box-header d-flex justify-content-between align-items-center">
       <h1 class="h2 d-inline mb-0">Tambah Data Barang</h1>
       <button class="min-box" id="min-box">X</button>
@@ -363,8 +363,9 @@
 
       <div class="form-group mb-1">
         <label class="font-weight-600" for="kondisi">Kondisi</label>
-        <select name="kondisi" data-validation="required"  class="form-control js-example-basic-single pr-3" id="kondisi" tabindex="2">
-          <option selected value="kondisi">Baik</option>
+        <select name="kondisi" data-validation="required"  class="form-control js-example-basic-single pr-3" id="kondisi" tabindex="3">
+          <option disabled selected value> -- Pilih Kondisi -- </option>
+          <option value="kondisi">Baik</option>
           <option value="kondisi">Rusak</option>
           <option value="kondisi">Hilang</option>
         </select>
@@ -378,15 +379,18 @@
       <div class="form-group ">
         <label class="font-weight-600" for="foto">Foto</label>
         <div class="custom-file">
-          <input type="file" data-validation="file" name="file" class="custom-file-input" id="customFile">
+          <input type="file" data-validation="file" data-valid="jpg-jpeg-png" name="file" class="custom-file-input" id="customFile">
           <label class="custom-file-label" for="customFile" tabindex="4">Choose file</label>
         </div>
-        <small class="text-danger v-hidden">Error</small>
+        <div class="d-flex mt-1 justify-content-between">
+          <small class="text-danger v-hidden">Error</small>
+          <small class="text-dark">Format Gambar : JPG / PNG / JPEG</small>
+        </div>
       </div>
       <div class="form-group">
         <div class="box-footer d-flex px-5">
-          <button type="submit" class="btn btn-validation btn-primary d-block w-50" tabindex="5">Simpan</button>
-          <button type="button" id="close-box" class="btn btn-dark d-block w-50" tabindex="6">Batal</button>
+          <button type="submit" class="btn btn-validation btn-primary d-block w-50" tabindex="4">Simpan</button>
+          <button type="button" id="close-box" class="btn btn-dark d-block w-50" tabindex="5">Batal</button>
         </div>
     </form>
   </div>
