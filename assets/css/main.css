@@ -1,3 +1,6 @@
+body {
+    min-height: 100vh;
+}
 .active-link {
     background-color: rgba(30, 143, 255, 0.1) !important;
     padding:20px;
@@ -14,6 +17,42 @@
     margin-top: 4rem;
 }
 
+
+.modal-confirm{
+	background-color: rgba(0,0,0,.3);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed !important;
+    pointer-events: none;
+    z-index: 10000;
+	opacity: 0;
+	top: 0;
+	left: 0;
+	height: 100vh;
+    width: 100vw;
+    transition: opacity .4s;
+}
+
+.modal-confirm.show {
+	pointer-events: auto;
+	opacity: 1;
+}
+
+
+.modal-confirm-body {
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+	width: 500px;
+	max-width: 100%;
+	text-align: center;
+}
+
+
+
+
+
+
 button.btn-outline-light:hover {
     background-color: dodgerblue !important;
     color: #fff !important;
@@ -28,7 +67,7 @@ button.btn-outline-light:hover {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 10;
+    z-index: 1;
 }
 
 .min-box{
@@ -46,7 +85,7 @@ button.btn-outline-light:hover {
     bottom: 0;
     height: 100vh;
     right:0;
-    z-index: 102;
+    z-index: 10;
     width: 500px;
     transform: translateX(100%);
     transition: all .5s;

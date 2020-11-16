@@ -7,10 +7,35 @@ $(document).ready(function() {
         $('.js-example-basic-single').select2();
     }
     
+    /* ---------- CONFIRM MODAL ---------- */ 
+    if(document.querySelector('.modal-confirm')){
+        modalConfirm()
+    }
+    function modalConfirm(){
+        let modalBtn = document.querySelectorAll('.btn-confirm-modal');
+        let close = document.querySelectorAll('.btn-confirm-close');
+        for( let i = 0; i < modalBtn.length; i++){
+            let modal = document.getElementById(modalBtn[i].dataset.content)
+            let inputId = modal.querySelector('.id-data');
+            modalBtn[i].addEventListener('click', function(){
+                let idData = modalBtn[i].dataset.kode;
+                inputId.value = idData
+                modal.classList.add('show')
+            })
+        }
+
+        for( let j = 0; j < close.length; j++){
+            let target = document.getElementById(close[j].dataset.close)
+            close[j].addEventListener('click', function(e){
+                e.preventDefault()
+                target.classList.remove('show')
+            })
+        }
+
+    }
     
     
-    
-    // active menu sidebar
+    /* ---------- ACTIVE MENU SIDEBAR ---------- */ 
     if(document.getElementById('sidebar')){
         handleActiveMenu();
     }
@@ -154,7 +179,7 @@ $(document).ready(function() {
             if(data.value === ''){
                 setError(data.parentElement, 'Inputan tidak boleh kosong!')
                 validation = false;
-            } else if(isFile(data, extentionFile, validExtention) === false){
+            } else if(isFile(extentionFile, validExtention) === false){
                 setError(data.parentElement, 'Format file tidak valid');
                 validation = false;
             }
