@@ -21,6 +21,18 @@
 </head>
 
 <body>
+  <!-- Modal Confirm Logout -->
+  <div class="modal-confirm " id="confirm-logout">
+		<div class="modal-confirm-body shadow rounded pb-4 position-relative">
+      <div class="confirm-header mb-4 bg-primary py-3 w-100 position-relative rounded-top">
+        <h1 class="text-white h2">Konfirmasi <span class="title-modal-confirm">logout</span>!</h1>
+      </div>
+			<p class="message-modal-confirm text-lg mb-5">Anda yakin untuk logout?</p>
+      <button class="btn-confirm-close btn btn-dark" data-close="confirm-logout">Batal</button>
+      <a href="login.html" class="text-white btn btn-danger">Logout</a>
+		</div>
+  </div>
+
   <!-- Sidenav -->
   <nav class="sidenav navbar navbar-vertical  fixed-left  navbar-expand-xs navbar-light bg-white" id="sidenav-main">
     <div class="scrollbar-inner">
@@ -129,7 +141,7 @@
                     <img alt="Image placeholder" src="assets/img/theme/team-4.jpg">
                   </span>
                   <div class="media-body  ml-2  d-none d-lg-block">
-                    <span class="mb-0 text-sm  font-weight-bold">John Snow</span>
+                    <span class="mb-0 text-sm  font-weight-bold">DUNIAPLIKASI</span>
                   </div>
                 </div>
               </a>
@@ -140,7 +152,7 @@
                   <span>My profile</span>
                 </a>
                 <div class="dropdown-divider"></div>
-                <a href="#!" class="dropdown-item">
+                <a href="#" data-content="confirm-logout" data-kode="idUser" class="btn-confirm-modal dropdown-item">
                   <i class="ni ni-user-run"></i>
                   <span>Logout</span>
                 </a>

@@ -25,6 +25,33 @@
 </head>
 
 <body class="position-relative">
+  <!-- Modal Confirm Delete -->
+  <div class="modal-confirm " id="confirm-delete">
+		<div class="modal-confirm-body shadow rounded pb-4 position-relative">
+      <div class="confirm-header mb-4 bg-primary py-3 w-100 position-relative rounded-top">
+        <h1 class="text-white h2">Konfirmasi <span class="title-modal-confirm">hapus</span>!</h1>
+      </div>
+			<p class="message-modal-confirm text-lg mb-5">Tetap lakukan hapus data ini?</p>
+      <button class="btn-confirm-close btn btn-dark" data-close="confirm-delete">Batal</button>
+      <form class="d-inline-block">
+        <input type="hidden" name="id" class="id-data form-control" value=""> <!-- Otomatis get id -->
+        <button type="submit" class=" btn btn-danger">Hapus</button>
+      </form>
+		</div>
+  </div>
+
+  <!-- Modal Confirm Logout -->
+  <div class="modal-confirm " id="confirm-logout">
+		<div class="modal-confirm-body shadow rounded pb-4 position-relative">
+      <div class="confirm-header mb-4 bg-primary py-3 w-100 position-relative rounded-top">
+        <h1 class="text-white h2">Konfirmasi <span class="title-modal-confirm">logout</span>!</h1>
+      </div>
+			<p class="message-modal-confirm text-lg mb-5">Anda yakin untuk logout?</p>
+      <button class="btn-confirm-close btn btn-dark" data-close="confirm-logout">Batal</button>
+      <a href="login.html" class="text-white btn btn-danger">Logout</a>
+		</div>
+  </div>
+
   <!-- Sidenav -->
   <nav class="sidenav navbar navbar-vertical  fixed-left  navbar-expand-xs navbar-light bg-white" id="sidenav-main">
     <div class="scrollbar-inner">
@@ -316,7 +343,7 @@
                   <span>My profile</span>
                 </a>
                 <div class="dropdown-divider"></div>
-                <a href="#!" class="dropdown-item">
+                <a href="#" data-content="confirm-logout" data-kode="idUser" class="btn-confirm-modal dropdown-item">
                   <i class="ni ni-user-run"></i>
                   <span>Logout</span>
                 </a>
@@ -375,9 +402,8 @@
                         <td>12/11/2020</td>
                         <td class="text-center py-1">
                           <div class="btn-group">
-                            <button class="bdg btn-outline-primary hover-warning"><i class="fas fa-info"></i></button>
-                            <button id="btn-box" class="btn-edit bdg btn-outline-primary hover-success border-right-0 border-left-0"><i class="fas fa-pen-alt"></i></button>
-                            <button class="bdg btn-outline-primary hover-danger"><i class="fas fa-eraser"></i></button>
+                            <button id="btn-box" class="btn-edit bdg btn-outline-primary hover-success border-right-0"><i class="fas fa-pen-alt"></i></button>
+                            <button data-content="confirm-delete" data-kode="id1" class="btn-confirm-modal bdg btn-outline-primary hover-danger"><i class="fas fa-eraser"></i></button>
                           </div>
                         </td>
                     </tr>
@@ -387,9 +413,8 @@
                         <td>12/11/2020</td>
                         <td class="text-center py-1">
                           <div class="btn-group">
-                            <button class="bdg btn-outline-primary hover-warning"><i class="fas fa-info"></i></button>
-                            <button id="btn-box" class="btn-edit bdg btn-outline-primary hover-success border-right-0 border-left-0"><i class="fas fa-pen-alt"></i></button>
-                            <button class="bdg btn-outline-primary hover-danger"><i class="fas fa-eraser"></i></button>
+                            <button id="btn-box" class="btn-edit bdg btn-outline-primary hover-success border-right-0"><i class="fas fa-pen-alt"></i></button>
+                            <button data-content="confirm-delete" data-kode="id2" class="btn-confirm-modal bdg btn-outline-primary hover-danger"><i class="fas fa-eraser"></i></button>
                           </div>
                         </td>
                     </tr>
@@ -399,9 +424,8 @@
                         <td>12/11/2020</td>
                         <td class="text-center py-1">
                           <div class="btn-group">
-                            <button class="bdg btn-outline-primary hover-warning"><i class="fas fa-info"></i></button>
-                            <button id="btn-box" class="btn-edit bdg btn-outline-primary hover-success border-right-0 border-left-0"><i class="fas fa-pen-alt"></i></button>
-                            <button class="bdg btn-outline-primary hover-danger"><i class="fas fa-eraser"></i></button>
+                            <button id="btn-box" class="btn-edit bdg btn-outline-primary hover-success border-right-0"><i class="fas fa-pen-alt"></i></button>
+                            <button data-content="confirm-delete" data-kode="id1" class="btn-confirm-modal bdg btn-outline-primary hover-danger"><i class="fas fa-eraser"></i></button>
                           </div>
                         </td>
                     </tr>
@@ -411,9 +435,8 @@
                         <td>12/11/2020</td>
                         <td class="text-center py-1">
                           <div class="btn-group">
-                            <button class="bdg btn-outline-primary hover-warning"><i class="fas fa-info"></i></button>
-                            <button id="btn-box" class="btn-edit bdg btn-outline-primary hover-success border-right-0 border-left-0"><i class="fas fa-pen-alt"></i></button>
-                            <button class="bdg btn-outline-primary hover-danger"><i class="fas fa-eraser"></i></button>
+                            <button id="btn-box" class="btn-edit bdg btn-outline-primary hover-success border-right-0"><i class="fas fa-pen-alt"></i></button>
+                            <button data-content="confirm-delete" data-kode="id1" class="btn-confirm-modal bdg btn-outline-primary hover-danger"><i class="fas fa-eraser"></i></button>
                           </div>
                         </td>
                     </tr>
@@ -423,9 +446,8 @@
                         <td>12/11/2020</td>
                         <td class="text-center py-1">
                           <div class="btn-group">
-                            <button class="bdg btn-outline-primary hover-warning"><i class="fas fa-info"></i></button>
-                            <button id="btn-box" class="btn-edit bdg btn-outline-primary hover-success border-right-0 border-left-0"><i class="fas fa-pen-alt"></i></button>
-                            <button class="bdg btn-outline-primary hover-danger"><i class="fas fa-eraser"></i></button>
+                            <button id="btn-box" class="btn-edit bdg btn-outline-primary hover-success border-right-0"><i class="fas fa-pen-alt"></i></button>
+                            <button data-content="confirm-delete" data-kode="id1" class="btn-confirm-modal bdg btn-outline-primary hover-danger"><i class="fas fa-eraser"></i></button>
                           </div>
                         </td>
                     </tr>
@@ -435,9 +457,8 @@
                         <td>12/11/2020</td>
                         <td class="text-center py-1">
                           <div class="btn-group">
-                            <button class="bdg btn-outline-primary hover-warning"><i class="fas fa-info"></i></button>
-                            <button id="btn-box" class="btn-edit bdg btn-outline-primary hover-success border-right-0 border-left-0"><i class="fas fa-pen-alt"></i></button>
-                            <button class="bdg btn-outline-primary hover-danger"><i class="fas fa-eraser"></i></button>
+                            <button id="btn-box" class="btn-edit bdg btn-outline-primary hover-success border-right-0"><i class="fas fa-pen-alt"></i></button>
+                            <button data-content="confirm-delete" data-kode="id1" class="btn-confirm-modal bdg btn-outline-primary hover-danger"><i class="fas fa-eraser"></i></button>
                           </div>
                         </td>
                     </tr>
@@ -447,9 +468,8 @@
                         <td>12/11/2020</td>
                         <td class="text-center py-1">
                           <div class="btn-group">
-                            <button class="bdg btn-outline-primary hover-warning"><i class="fas fa-info"></i></button>
-                            <button id="btn-box" class="btn-edit bdg btn-outline-primary hover-success border-right-0 border-left-0"><i class="fas fa-pen-alt"></i></button>
-                            <button class="bdg btn-outline-primary hover-danger"><i class="fas fa-eraser"></i></button>
+                            <button id="btn-box" class="btn-edit bdg btn-outline-primary hover-success border-right-0"><i class="fas fa-pen-alt"></i></button>
+                            <button data-content="confirm-delete" data-kode="id1" class="btn-confirm-modal bdg btn-outline-primary hover-danger"><i class="fas fa-eraser"></i></button>
                           </div>
                         </td>
                     </tr>
@@ -459,9 +479,8 @@
                         <td>12/11/2020</td>
                         <td class="text-center py-1">
                           <div class="btn-group">
-                            <button class="bdg btn-outline-primary hover-warning"><i class="fas fa-info"></i></button>
-                            <button id="btn-box" class="btn-edit bdg btn-outline-primary hover-success border-right-0 border-left-0"><i class="fas fa-pen-alt"></i></button>
-                            <button class="bdg btn-outline-primary hover-danger"><i class="fas fa-eraser"></i></button>
+                            <button id="btn-box" class="btn-edit bdg btn-outline-primary hover-success border-right-0"><i class="fas fa-pen-alt"></i></button>
+                            <button data-content="confirm-delete" data-kode="id1" class="btn-confirm-modal bdg btn-outline-primary hover-danger"><i class="fas fa-eraser"></i></button>
                           </div>
                         </td>
                     </tr>

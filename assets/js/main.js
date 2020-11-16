@@ -18,8 +18,10 @@ $(document).ready(function() {
             let modal = document.getElementById(modalBtn[i].dataset.content)
             let inputId = modal.querySelector('.id-data');
             modalBtn[i].addEventListener('click', function(){
-                let idData = modalBtn[i].dataset.kode;
-                inputId.value = idData
+                if(document.body.contains(inputId)){
+                    let idData = modalBtn[i].dataset.kode;
+                    inputId.value = idData
+                }
                 modal.classList.add('show')
             })
         }
@@ -67,7 +69,7 @@ $(document).ready(function() {
         let firstInput = boxAdd.querySelector('input');
         document.getElementById('btn-box').addEventListener('click', function(){
             showBox(document.querySelector('.box-add'));
-            if(firstInput.dataset.focus !== 'false' ){
+            if(firstInput.dataset.focus !== 'false'){
                 firstInput.focus();
             }
             
